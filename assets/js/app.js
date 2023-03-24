@@ -16,3 +16,14 @@ var swiper = new Swiper(".programs-slider", {
     prevEl: ".prev",
   },
 });
+
+
+$(document).ready(function() {
+    $('.nav-menu li a').click(function() {
+      // remove the "active" class from all links
+      $('.nav-menu li a').removeClass('active');
+      
+      // add the "active" class to the clicked link
+      $(this).addClass('active');
+    });
+  });
