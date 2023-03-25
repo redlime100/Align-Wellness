@@ -10,6 +10,13 @@ nav.navigation {
   margin-top: 20px;
   filter: drop-shadow(-2px 0px 7px rgba(0, 0, 0, 0.1));
 }
+.toggle-menu img {
+  width: 40px;
+}
+
+.toggle-menu {
+  display: none;
+}
 a.logo img {
   width: 135px;
 }
@@ -60,6 +67,13 @@ a.nav-link::before {
 .nav-link:hover::before {
   width: 80%;
   margin: auto;
+}.menu-close img {
+  width: 43px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  cursor: pointer;
+  display: none;
 }
 
 .nav-link.active {
@@ -87,7 +101,7 @@ a.nav-link::before {
 }
 
 .navigation-wrapper {
-  z-index: 1;
+  z-index: 11;
   position: relative;
 }
 
@@ -181,7 +195,7 @@ h2.title-head {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 50px;
   line-height: 160%;
   letter-spacing: 0.015em;
 }
@@ -321,7 +335,7 @@ ul.logo-list li img:hover {
 
 .improve-content-inner h2 {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 38px;
   line-height: 160%;
   letter-spacing: 0.015em;
 }

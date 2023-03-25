@@ -1,16 +1,25 @@
 var swiper = new Swiper(".logo_slider", {
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 30,
   loopedSlides: 4,
   autoplay: {
     delay: 3000,
   },
+  breakpoints: {
+    
+    500: {
+      slidesPerView: 3, 
+    },
+    1024: {
+      slidesPerView: 4, // for large screens
+    },
+  },
 });
 
 var swiper = new Swiper(".programs-slider", {
   loop: true,
-
+  spaceBetween: 50,
   navigation: {
     nextEl: ".next",
     prevEl: ".prev",
@@ -20,10 +29,21 @@ var swiper = new Swiper(".programs-slider", {
 
 $(document).ready(function() {
     $('.nav-menu li a').click(function() {
-      // remove the "active" class from all links
       $('.nav-menu li a').removeClass('active');
-      
-      // add the "active" class to the clicked link
       $(this).addClass('active');
+    });
+  });
+
+
+
+  $(document).ready(function() {
+    $("#openNav").click(function() {
+      $("#myDiv").addClass("active");
+    });
+  });
+
+  $(document).ready(function() {
+    $("#closeNav").click(function() {
+      $("#myDiv").removeClass("active");
     });
   });
