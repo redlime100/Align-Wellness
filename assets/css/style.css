@@ -6,9 +6,16 @@ nav.navigation {
   background-blend-mode: overlay;
   backdrop-filter: blur(18px);
   border-radius: 14px;
+  transition: .3s;
   padding: 20px 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   filter: drop-shadow(-2px 0px 7px rgba(0, 0, 0, 0.1));
+}
+.navigation-wrapper.scrolled {
+  margin-top: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .toggle-menu img {
   width: 40px;
@@ -45,6 +52,8 @@ a.nav-link::before {
   right: 0px;
   bottom: 0px;
   transition: all 0.3s ease 0s;
+}.navigation-wrapper.scrolled .container .navigation {
+  border-radius: 0 0px 14px 14px;
 }
 .slider-img::after {
   content: "";
@@ -103,6 +112,8 @@ a.nav-link::before {
 .navigation-wrapper {
   z-index: 11;
   position: relative;
+  margin-top: 20px;
+  transition: .3s;
 }
 
 .hero-right-img {

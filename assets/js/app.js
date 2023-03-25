@@ -47,3 +47,13 @@ $(document).ready(function() {
       $("#myDiv").removeClass("active");
     });
   });
+
+
+  $(document).on('scroll', function() {
+    var scrollTop = $(this).scrollTop();
+    if (scrollTop > 0) {
+      $('.navigation-wrapper').addClass('scrolled');
+    } else {
+      $('.navigation-wrapper').removeClass('scrolled');
+    }
+  });
