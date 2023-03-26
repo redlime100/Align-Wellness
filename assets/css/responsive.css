@@ -16,7 +16,7 @@
     }
     .slider-navigation {
         bottom: 0;
-        right: 43%;
+        left: 4%;
     }
     .improve-content {
         padding: 60px 30px;
@@ -48,8 +48,8 @@
         background-size: cover;
         background-position: center;
         padding-top: 200px;
-        margin-top: -125px;
-        height: 790px;
+        margin-top: -37px;
+        height: 800px;
     }
     .content-left {
         width: 98%;
@@ -119,6 +119,9 @@
 }
 
 @media screen and (max-width:500px) {
+    .footer-area {
+        padding: 37px 10px;
+    }
     
     .improve-content-inner h2 {
         font-size: 25px;

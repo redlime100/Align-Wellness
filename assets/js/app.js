@@ -4,7 +4,7 @@ var swiper = new Swiper(".logo_slider", {
   spaceBetween: 30,
   loopedSlides: 4,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
   },
   breakpoints: {
     
@@ -44,6 +44,12 @@ $(document).ready(function() {
 
   $(document).ready(function() {
     $("#closeNav").click(function() {
+      $("#myDiv").removeClass("active");
+    });
+  });
+
+  $(document).ready(function() {
+    $(".nav-menu li a").click(function() {
       $("#myDiv").removeClass("active");
     });
   });

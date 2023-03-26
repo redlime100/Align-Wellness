@@ -115,6 +115,7 @@ a.nav-link::before {
   margin-top: 20px;
   transition: .3s;
   width: 100%;
+  top: 0;
 }
 
 .hero-right-img {
