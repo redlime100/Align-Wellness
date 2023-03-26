@@ -36,6 +36,11 @@
     .slider-img::before{
         display: none;
     }
+    .slider-navigation {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -78,7 +83,17 @@
     }
 }
 @media screen and (max-width:650px) {
-    
+    .content-left {
+        background: rgb(234 247 255 / 75%);
+        backdrop-filter: blur(5px);
+    }
+    .content-left::after,
+    .content-left::before{
+        display: none;
+    }
+    .hero-content-inner{
+        background: none;
+    }
     
     .toggle-menu {
         display: block;
@@ -119,6 +134,15 @@
 }
 
 @media screen and (max-width:500px) {
+    .hero-section {
+        height: 730px;
+    }
+    .sl-content-inner h2 {
+        font-size: 25px;
+    }
+    br{
+        display: none;
+    }
     .footer-area {
         padding: 37px 10px;
     }
