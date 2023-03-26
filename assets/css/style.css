@@ -95,8 +95,8 @@ a.nav-link::before {
 }
 
 .hero-section {
-  padding-top: 70px;
-  height: 750px;
+  padding-top: 185px;
+  height: 850px;
 }
 
 .hero-content-inner {
@@ -111,9 +111,10 @@ a.nav-link::before {
 
 .navigation-wrapper {
   z-index: 11;
-  position: relative;
+  position: fixed;
   margin-top: 20px;
   transition: .3s;
+  width: 100%;
 }
 
 .hero-right-img {
